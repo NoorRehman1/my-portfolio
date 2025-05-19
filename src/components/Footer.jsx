@@ -48,11 +48,11 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-center gap-2">
                 <FiMail className="text-pink-500" />
-                your.email@example.com
+                noorreehman90@.com
               </li>
               <li className="flex items-center gap-2">
                 <FiPhone className="text-pink-500" />
-                +91 98765 43210
+                +92 700242351
               </li>
             </ul>
           </div>
@@ -62,8 +62,8 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               {[
-                { icon: <FiGithub />, link: "#" },
-                { icon: <FiLinkedin />, link: "#" },
+                { icon: <FiGithub />, link: "https://github.com/NoorRehman1" },
+                { icon: <FiLinkedin />, link: "https://www.linkedin.com/in/noorkhan01/" },
                 { icon: <FiTwitter />, link: "#" },
                 { icon: <FiInstagram />, link: "#" }
               ].map((social, index) => (

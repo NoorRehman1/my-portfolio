@@ -4,19 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 // import { Button } from './components/ui/button'
 import Navbar from './components/Navbar'
-import HeroSection from './components/Hero-section'
+// import HeroSection from './components/Hero-section'
 // import AboutMe from './components/About'
 import AboutWithSkills from './components/About-me'
 import ProjectsSection from './components/Projects'
 import ContactSection from './components/Contact'
 import Footer from './components/Footer'
+import Herosection from './components/Herosection'
 function App() {
 
 
   return (
     <>
       <Navbar/>
-      <HeroSection/>
+      <Herosection/>
       {/* <AboutMe/> */}
       <AboutWithSkills/>
          <ProjectsSection/>

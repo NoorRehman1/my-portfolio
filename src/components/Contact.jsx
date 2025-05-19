@@ -37,7 +37,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Email</h3>
-                <p className="text-gray-600">your.email@example.com</p>
+                <p className="text-gray-600">noorreehman90@gmail.com</p>
                 <a 
                   href="mailto:your.email@example.com" 
                   className="text-indigo-600 text-sm hover:underline"
@@ -53,7 +53,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Location</h3>
-                <p className="text-gray-600">New Delhi, India</p>
+                <p className="text-gray-600">Mosamyat</p>
                 <a 
                   href="https://maps.google.com" 
                   target="_blank" 
@@ -71,7 +71,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Phone</h3>
-                <p className="text-gray-600">+91 98765 43210</p>
+                <p className="text-gray-600">+92 700242351</p>
                 <a 
                   href="tel:+919876543210" 
                   className="text-indigo-600 text-sm hover:underline"
