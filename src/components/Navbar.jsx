@@ -21,7 +21,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About Me', href: '#about' },
-    { name: 'Services', href: '#services' },
+    { name: 'Projects', href: '#Projects' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -36,10 +36,10 @@ const Navbar = () => {
         
         {/* ✅ Logo */}
         <motion.div whileHover={{ scale: 1.05 }}>
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">
+          <h1 className="text-1xl md:text-3xl font-bold text-gray-800 dark:text-white">
             NOOR <span className="text-green-600  dark:text-yellow-300">REHMAN</span>
           </h1>
-        </motion.div>
+        </motion.div> 
 
         {/* ✅ Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">

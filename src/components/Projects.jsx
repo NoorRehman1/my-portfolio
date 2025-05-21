@@ -46,17 +46,17 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50" id="projects">
+    <section className="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-500" id="projects">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          My <span className="text-indigo-600">Projects</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 dark:text-yellow-400">
+          My <span className="text-indigo-600 dark:text-yellow-400">Projects</span>
         </h2>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        <p className="text-gray-700 dark:text-yellow-300 leading-relaxed max-w-2xl mx-auto text-center mb-12">
           Here are some of my featured works. Each project comes with detailed case studies.
         </p>
 
         {/* Project Showcase */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-colors duration-500">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Project Image */}
             <div className="relative h-64 lg:h-auto">
@@ -68,13 +68,13 @@ const ProjectsSection = () => {
               <div className="absolute bottom-4 right-4 flex space-x-2">
                 <button
                   onClick={prevProject}
-                  className="p-2 bg-white/80 rounded-full shadow hover:bg-white transition"
+                  className="p-2 bg-white/80 dark:bg-gray-700 rounded-full shadow hover:bg-white dark:hover:bg-gray-600 transition"
                 >
                   <FiChevronLeft />
                 </button>
                 <button
                   onClick={nextProject}
-                  className="p-2 bg-white/80 rounded-full shadow hover:bg-white transition"
+                  className="p-2 bg-white/80 dark:bg-gray-700 rounded-full shadow hover:bg-white dark:hover:bg-gray-600 transition"
                 >
                   <FiChevronRight />
                 </button>
@@ -83,16 +83,20 @@ const ProjectsSection = () => {
 
             {/* Project Details */}
             <div className="p-8">
-              <h3 className="text-2xl font-bold mb-2">{projects[activeProject].title}</h3>
-              <p className="text-gray-600 mb-6">{projects[activeProject].description}</p>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-yellow-400">
+                {projects[activeProject].title}
+              </h3>
+              <p className="text-gray-700 dark:text-yellow-300 leading-relaxed mb-6">
+                {projects[activeProject].description}
+              </p>
               
               <div className="mb-6">
-                <h4 className="font-medium mb-3">Technologies Used:</h4>
+                <h4 className="font-medium mb-3 text-gray-900 dark:text-yellow-400">Technologies Used:</h4>
                 <div className="flex flex-wrap gap-2">
                   {projects[activeProject].technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-sm"
+                      className="px-3 py-1 bg-indigo-50 dark:bg-yellow-900 text-indigo-600 dark:text-yellow-300 rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -105,7 +109,7 @@ const ProjectsSection = () => {
                   href={projects[activeProject].links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+                  className="flex items-center px-4 py-2 bg-gray-800 dark:bg-yellow-700 text-white dark:text-gray-900 rounded hover:bg-gray-700 dark:hover:bg-yellow-600 transition"
                 >
                   <FiGithub className="mr-2" /> Code
                 </a>
@@ -113,7 +117,7 @@ const ProjectsSection = () => {
                   href={projects[activeProject].links.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-50 transition"
+                  className="flex items-center px-4 py-2 border border-indigo-600 dark:border-yellow-500 text-indigo-600 dark:text-yellow-300 rounded hover:bg-indigo-50 dark:hover:bg-yellow-800 dark:hover:text-yellow-200 transition"
                 >
                   <FiExternalLink className="mr-2" /> Live Demo
                 </a>
@@ -128,8 +132,8 @@ const ProjectsSection = () => {
             <div
               key={index}
               onClick={() => setActiveProject(index)}
-              className={`bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all hover:shadow-lg ${
-                activeProject === index ? "ring-2 ring-indigo-500" : ""
+              className={`bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md cursor-pointer transition-all hover:shadow-lg ${
+                activeProject === index ? "ring-2 ring-indigo-500 dark:ring-yellow-400" : ""
               }`}
             >
               <img
@@ -138,8 +142,8 @@ const ProjectsSection = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="font-bold">{project.title}</h3>
-                <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+                <h3 className="font-bold text-gray-900 dark:text-yellow-400">{project.title}</h3>
+                <p className="text-gray-700 dark:text-yellow-300 mt-1 line-clamp-2">
                   {project.description}
                 </p>
               </div>
